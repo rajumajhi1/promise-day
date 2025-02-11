@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Promise Machine for Kaju ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('assets/background-image.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-overlay"></div>
+    <div class="container">
+        <h1 class="title animate__animated animate__bounceIn">Happy Promise Day!</h1>
+        <div class="promise-counter">Promises Made: <span id="promise-count">0</span>/10</div>
+        <div id="promise-section">
+            <div class="promise-machine">
+                <div class="promise-display">
+                    <div class="envelope">
+                        <div class="envelope-flap"></div>
+                        <div class="letter">
+                            <p id="promise-text">Click the heart to get a sweet promise! ❤️</p>
+                        </div>
+                    </div>
+                </div>
+                <button id="heart-button" class="heart-button">
+                    <span class="heart">❤️</span>
+                </button>
+                <div class="floating-hearts"></div>
+            </div>
+        </div>
+        <div id="final-message" class="final-message">
+            <div class="final-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="heart-decoration">❤️</div>
+                        <h2>Tap to see your special promise</h2>
+                    </div>
+                    <div class="card-back">
+                        <div class="final-message-content">
+                            <div id="final-promise" class="final-promise-text"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="music-toggle" class="control-button">
+                <span class="button-icon">🎵</span>
+                <span class="button-label">Music</span>
+            </button>
+            <button id="theme-toggle" class="control-button">
+                <span class="button-icon">🌙</span>
+                <span class="button-label">Theme</span>
+            </button>
+        </div>
+    </div>
+    <audio id="ding-sound" src="assets/ding.mp3"></audio>
+    <audio id="background-music" src="assets/background-music.mp3" loop></audio>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
